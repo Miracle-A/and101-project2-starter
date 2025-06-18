@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-        val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 
@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchFavoriteNumberActivity() {
-        val i = Intent(this, FavoriteNumber::class.java)
+        val i = Intent(this, FavoriteNumberActivity::class.java)
         startActivity(i)
     }
+
 }
